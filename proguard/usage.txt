@@ -1,0 +1,552 @@
+accessibility.AccService:
+    55:55:public foreground.Config getConfig()
+    58:58:public static accessibility.AccService getQiangHongBaoService()
+    105:111:public static void sendRequsetPermissionBroadCast(android.content.Context)
+    181:203:public boolean pressLongLocation(android.graphics.Point)
+    221:225:public void startClick(android.graphics.Point)
+    228:230:public void closeClick()
+    232:232:public int clickCount()
+    239:249:public void slideThread(android.graphics.Point,android.graphics.Point)
+    252:273:public boolean slide(android.graphics.Point,android.graphics.Point)
+accessibility.AccService$3
+accessibility.AccService$4
+accessibility.AccService$5
+accessibility.AccessibilityHelper:
+    public static final java.lang.String WIDGET_BUTTON
+    public static final java.lang.String WIDGET_EDIT
+    public static final java.lang.String WIDGET_TEXT
+    public static final java.lang.String PACKAG_ENAME_SETTING
+    private static final java.lang.String DIGITAL
+    private static android.view.accessibility.AccessibilityNodeInfo mNodeInfo
+    27:27:public AccessibilityHelper()
+    51:59:public static android.view.accessibility.AccessibilityNodeInfo findNodeInfosByTextAndClassName(android.view.accessibility.AccessibilityNodeInfo,java.lang.String,java.lang.String)
+    63:72:public static android.view.accessibility.AccessibilityNodeInfo findNodeInfosByTextAllMatched(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+    77:81:public static android.view.accessibility.AccessibilityNodeInfo findNodeInfosByTextNext(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+    85:106:private static void findNodeInfosByTextNextRecycle(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+    155:158:public static void Sleep(int)
+    179:188:public static boolean performScrollForward(android.view.accessibility.AccessibilityNodeInfo)
+    225:254:public static boolean nodeInput(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+    259:288:public static void recycle2(android.view.accessibility.AccessibilityNodeInfo)
+    292:336:public static void recycle(android.view.accessibility.AccessibilityNodeInfo)
+    339:339:public static boolean isDigital(java.lang.String)
+accessibility.AccessibilityJob:
+    public abstract java.lang.String[] getTargetPackageName()
+    public abstract boolean isTargetPackageName(java.lang.String)
+    public abstract boolean isEnable()
+    public abstract void onCreateJob(accessibility.AccService)
+    public abstract void onStopJob()
+    public abstract void onReceiveJob(android.view.accessibility.AccessibilityEvent)
+    public abstract void EventStart()
+    public abstract void EventTimeStart()
+    public abstract void closeEventWorking()
+    public abstract void TimeStart()
+    public abstract void closeTimeWorking()
+accessibility.BaseAccessibilityJob:
+    private static final int TIME_WORKING_INTERVAL
+    protected static final int TIME_WORKING_CONTINUE
+    58:58:protected android.content.Context getContext()
+    62:62:protected foreground.Config getConfig()
+    66:66:protected accessibility.AccService getService()
+    99:99:public java.lang.String[] getTargetPackageName()
+    138:139:public void closeEventWorking()
+activity.Splash1Activity:
+    72:90:private void requestPermission(boolean)
+    107:111:public static void startHomeActivity(android.content.Context)
+    127:133:public static void startSplash1Activity(android.content.Context)
+    152:157:public static void restartApp(android.content.Context)
+    200:200:public static int getSceenHeight(android.app.Activity)
+activity.Splash1Activity$1
+ad.Ad2:
+    public static final java.lang.String WX_WINDOW_LAUNCHER_UI
+    public static final java.lang.String QQ_WINDOW_LAUNCHER_UI
+    public static final java.lang.String WX_PACKAGENAME
+    public static final java.lang.String QQ_PACKAGENAME
+    private static final java.lang.String EDIT_CLASS_NAME
+    private static final java.lang.String IMAG_BUTTON_CLASS_NAME
+    private static final int JOY_IN_OTHER
+    private static final int JOY_IN_WX
+    private static final int JOY_IN_QQ
+    231:243:public void WXpopMenuNoCancel(android.view.accessibility.AccessibilityNodeInfo)
+ad.VersionParam:
+    14:14:public VersionParam()
+app.AppInfo
+app.AppInfoUtil
+app.AppInfoUtil$DisplayNameComparator
+app.AppInfoUtil$PackageInfoComparator
+com.bysc.maj.BuildConfig
+com.bysc.maj.R
+com.bysc.maj.R$array
+com.bysc.maj.R$attr
+com.bysc.maj.R$dimen
+com.bysc.maj.R$drawable
+com.bysc.maj.R$id
+com.bysc.maj.R$layout
+com.bysc.maj.R$menu
+com.bysc.maj.R$string
+com.bysc.maj.R$style
+com.bysc.maj.R$xml
+download.Download1Service:
+    public static final int WORKING_MSG_BASE
+    public static final int WORKING_PARSE_XML
+    public static final int WORKING_INSTALL_APP
+    public static final int MSG_RECEIVER_SMS_CODE
+    331:351:private void AutoInstall2(java.lang.String)
+    392:396:private void makeDir(java.lang.String)
+download.Download1Service$4
+download.ftp:
+    private static final int FTP_MSG_BASE
+    public static final int FTP_LOGIN_FAIL
+    public static final int FTP_LOGIN_SUC
+    public static final int FTP_DOWNLOAD_FAIL
+    public static final int FTP_DOWNLOAD_SUC
+    private static final java.lang.String FTP_DIR_NAME
+    private static final java.lang.String BUNDLE_TAG_WHAT
+    public static final java.lang.String BUNDLE_TAG_CURRENT_FILE
+    public static final java.lang.String BUNDLE_TAG_LOCAL_FILE
+    private static final java.lang.String BUNDLE_TAG_IS_DOWNLOAD
+    public static final java.lang.String ACTION_DOWNLOAD_INFO
+    73:76:public void DownloadStart(java.lang.String,java.lang.String)
+download.ftp$ftpThread:
+    123:140:public ftp$ftpThread(download.ftp,java.lang.String,boolean,java.lang.String)
+download.install.InstallApp:
+    private static final java.lang.String PACKAGE_INSTALLER
+    public static final java.lang.String INSTALL_CMD
+    200:216:public void smartInstall(java.lang.String)
+    229:232:public void uninstallApkInCmd(java.lang.String)
+    236:239:public static void installSlient(java.lang.String)
+    243:245:public static void uninstallSlient(java.lang.String)
+download.install.InstallOfAcc:
+    116:138:public void startInstall()
+    143:169:public void startInstall(int,boolean)
+download.install.MonitorSysReceiver
+encrypt.Base64:
+    private static final java.lang.String CODES
+    12:14:public Base64()
+    21:62:public static java.lang.String encode(java.lang.String)
+    66:90:public static java.lang.String Encode(byte[])
+    120:158:public static java.lang.String decode(java.lang.String)
+encrypt.DES:
+    private static final java.lang.String CHARSET
+    18:42:public DES(java.lang.String)
+    68:71:public java.lang.String encode(java.lang.String)
+foreground.AppInfo:
+    public java.lang.String[] mAppNames
+    60:67:public java.lang.String[] GetAppNames()
+    85:92:public java.lang.String GetPkgName(java.lang.String)
+foreground.AppInfo$AppsItemInfo:
+    private android.graphics.drawable.Drawable icon
+    154:154:public android.graphics.drawable.Drawable getIcon()
+    158:159:public void setIcon(android.graphics.drawable.Drawable)
+foreground.CalcShow:
+    private static final int MSG_RESULT
+    public static final java.lang.String ACTION_CALC_PIC_END
+foreground.Config:
+    public static final java.lang.String PLUGIN_VERSION
+    public static final java.lang.String PLUGIN_NAME
+    public static final java.lang.String PLUGIN_PACKAGENAME
+    public static final int RUNNING_IN_PLUGIN
+    public static final int RUNNING_IN_MYSELF
+    public static final java.lang.String PREFERENCE_NAME
+    public static final java.lang.String KEY
+    public static final java.lang.String TAG
+    public static final java.lang.String TAG2
+    public static final boolean DEBUG
+    public static final java.lang.String WECHAT_PACKAGENAME
+    public static final java.lang.String QQ_PACKAGENAME
+    public static final java.lang.String SETTING_PACKAGENAME
+    public static final java.lang.String IS_FIRST_RUN
+    private static final boolean bFirstRun
+    public static final java.lang.String appID
+    public static final java.lang.String REG
+    private static final boolean reg
+    private static final java.lang.String REG_CODE
+    public static final java.lang.String TEST_TIME
+    private static final int TestTime
+    public static final java.lang.String TEST_NUM
+    private static final int TestNum
+    public static final java.lang.String FIRST_RUN_TIME
+    public static final java.lang.String RUN_NUM
+    public static final java.lang.String PHONE_ID
+    public static final java.lang.String START_TEST_TIME
+    public static final int TestTimeInterval
+    private static final java.lang.String PAY_PWD
+    public static final java.lang.String KEY_PWD
+    public static final java.lang.String WINDOW_LUCKYMONEY_LAUNCHER_UI
+    public static final java.lang.String ACTION_QIANGHONGBAO_SERVICE_DISCONNECT
+    public static final java.lang.String ACTION_QIANGHONGBAO_SERVICE_CONNECT
+    public static final java.lang.String ACTION_DOWNLOAD_INFO
+    public static final java.lang.String ACTION_INSTALL_INFO
+    public static final java.lang.String ACTION_CMD_INFO
+    public static final java.lang.String ACTION_UPDATE_INFO
+    public static final java.lang.String ACTION_ACCESSBILITY_SERVICE_CLICK
+    public static final java.lang.String ACTION_ACCESSBILITY_SERVICE_REQUEST
+    private static final java.lang.String MAJ_TYPE
+    public static final int MAJ_TYPE_YILE
+    public static final int MAJ_TYPE_XIANLAI
+    public static final int MAJ_TYPE_GUAIZ
+    public static final int MAJ_TYPE_YOUXIAN
+    public static final int MAJ_TYPE_ZHUANGZ
+    public static final int MAJ_TYPE_DATAN
+    public static final int MAJ_TYPE_BUXIN
+    public static final int MAJ_TYPE_ZHONGZ
+    public static final int MAJ_TYPE_KELE
+    public static final int MAJ_TYPE_QIEYOU
+    public static final int MAJ_TYPE_PPPFZ
+    public static final int MAJ_TYPE_LIUZHOU
+    public static final int MAJ_TYPE_LIUZHOU2
+    public static final int MAJ_TYPE_LCGC
+    public static final int MAJ_TYPE_52
+    public static final int MAJ_TYPE_hb
+    public static final int MAJ_TYPE_OTHER
+    public static final int MAJ_TYPE_54
+    public static final int MAJ_TYPE_55
+    public static final int MAJ_TYPE_56
+    public static final int MAJ_TYPE_57
+    public static final int MAJ_TYPE_58
+    public static final int MAJ_TYPE_59
+    public static final int MAJ_TYPE_60
+    public static final int MAJ_TYPE_61
+    private static final java.lang.String NUM_MAN
+    public static final int NUM_MAN_TWO
+    public static final int NUM_MAN_THREE
+    public static final int NUM_MAN_FOUR
+    private static final java.lang.String ZI_MO
+    public static final int ZI_MO_10
+    public static final int ZI_MO_20
+    public static final int ZI_MO_30
+    public static final int ZI_MO_40
+    public static final int ZI_MO_50
+    public static final int ZI_MO_60
+    public static final int ZI_MO_70
+    public static final int ZI_MO_80
+    public static final int ZI_MO_90
+    private static final java.lang.String HAO_PAI
+    public static final int HAO_PAI_10
+    public static final int HAO_PAI_20
+    public static final int HAO_PAI_30
+    public static final int HAO_PAI_40
+    public static final int HAO_PAI_50
+    public static final int HAO_PAI_60
+    public static final int HAO_PAI_70
+    public static final int HAO_PAI_80
+    public static final int HAO_PAI_90
+    private static final java.lang.String SEL_MAJ_INDEX
+    private static final java.lang.String SEL_MAJ_NAME_INDEX
+    private static final java.lang.String MAJ_NAME
+    private static final java.lang.String SPEAKER
+    public static final java.lang.String KEY_SPEAKER_NONE
+    public static final java.lang.String KEY_SPEAKER_FEMALE
+    public static final java.lang.String KEY_SPEAKER_MALE
+    public static final java.lang.String KEY_SPEAKER_SPECIAL_MALE
+    public static final java.lang.String KEY_SPEAKER_EMOTION_MALE
+    public static final java.lang.String KEY_SPEAKER_CHILDREN
+    private static final java.lang.String WHETHER_SPEAKING
+    public static final boolean KEY_SPEAKING
+    public static final boolean KEY_NOT_SPEAKING
+    private static final java.lang.String WORK_SPACE
+    private static final java.lang.String ROOT_PERMISSION
+    public static final java.lang.String PHONE_BRAND_XIAOMI
+    public static final java.lang.String PHONE_BRAND_HONOR
+    public static final java.lang.String FTP_FILE_NAME
+    private static final java.lang.String INFO_NEW_VERSION
+    private static final java.lang.String INFO_CONTACT
+    private static final java.lang.String INFO_AD
+    private static final java.lang.String INFO_DOWNLOAD
+    public static final java.lang.String DOWNLOAD
+    private static final java.lang.String INFO_HOMEPAGE
+    public static final java.lang.String HOMEPAGE
+    private static final java.lang.String INFO_WARNING
+    public static final java.lang.String AD_REG_USER_SEND_INTERVAL
+    public static final java.lang.String AD_NO_REG_USER_SEND_INTERVAL
+    public static final java.lang.String AD_OTHER_MEDIA_SEND_INTERVAL
+    public static final java.lang.String AD_LUCKY_MONEY_SEND_IS
+    public static final java.lang.String WX_INFO
+    public static final java.lang.String HOST
+    public static final int PORT_VER
+    public static final int PORT_ORDER
+    public static final int PORT_DATA
+    public static final int PORT_FTP
+    public static final java.lang.String FTP_USER_NAME
+    public static final java.lang.String FTP_USER_PWD
+    392:392:public int getTestTime()
+    399:399:public int getAppTestNum()
+    406:406:public java.lang.String getFirstRunTime()
+    409:410:public void setFirstRunTime(java.lang.String)
+    413:413:public int getRunNum()
+    475:475:public java.lang.String getMajName()
+foreground.Contacts:
+    public static final java.lang.String WX_FLAG
+    public static final java.lang.String QQ_FLAG
+foreground.FloatingWindowPic:
+    public static final int SHOW_PIC_GREEN
+    public static final int SHOW_PIC_RED
+foreground.FloatingWindowSelCard:
+    181:185:public void Destroy()
+foreground.MainActivity:
+    private android.widget.RadioButton rb54
+    private android.widget.RadioButton rb55
+    private android.widget.RadioButton rb56
+    private android.widget.RadioButton rb57
+    private android.widget.RadioButton rb58
+    private android.widget.RadioButton rb59
+    private android.widget.RadioButton rb60
+    private android.widget.RadioButton rb61
+    217:228:private void hide(boolean)
+    292:308:public static java.util.List getStorageList()
+foreground.MainActivity$2
+foreground.Sock:
+    private static final int MSG_SUC
+    private static final int MSG_FAIL
+    private static final int HANDLE_REG
+    private static final int HANDLE_VERIFY
+foreground.job.WechatAccessibilityJob:
+    private android.view.accessibility.AccessibilityNodeInfo mRootNode
+foreground.permission.AVCallFloatView:
+    private static final java.lang.String TAG
+    59:68:public AVCallFloatView(android.content.Context)
+    71:77:private void initView()
+foreground.permission.FloatWindowManager:
+    private static final java.lang.String TAG
+    262:297:private void showWindow(android.content.Context)
+    300:310:public void dismissWindow()
+    313:314:private int dp2px(android.content.Context,float)
+foreground.permission.rom.HuaweiUtils:
+    private static final java.lang.String TAG
+    22:22:public HuaweiUtils()
+foreground.permission.rom.MeizuUtils:
+    private static final java.lang.String TAG
+    16:16:public MeizuUtils()
+foreground.permission.rom.MiuiUtils:
+    private static final java.lang.String TAG
+    19:19:public MiuiUtils()
+foreground.permission.rom.QikuUtils:
+    private static final java.lang.String TAG
+    17:17:public QikuUtils()
+foreground.permission.rom.RomUtils:
+    private static final java.lang.String TAG
+    20:20:public RomUtils()
+    44:52:public static int getMiuiVersion()
+it.sauronsoftware.ftp4j.FTPAbortedException:
+    private static final long serialVersionUID
+it.sauronsoftware.ftp4j.FTPClient:
+    public static final int SECURITY_FTP
+    public static final int SECURITY_FTPS
+    public static final int SECURITY_FTPES
+    public static final int TYPE_AUTO
+    public static final int TYPE_TEXTUAL
+    public static final int TYPE_BINARY
+    public static final int MLSD_IF_SUPPORTED
+    public static final int MLSD_ALWAYS
+    public static final int MLSD_NEVER
+    private static final int SEND_AND_RECEIVE_BUFFER_SIZE
+    391:393:public it.sauronsoftware.ftp4j.FTPConnector getConnector()
+    407:410:public void setConnector(it.sauronsoftware.ftp4j.FTPConnector)
+    421:424:public void setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)
+    434:436:public javax.net.ssl.SSLSocketFactory getSSLSocketFactory()
+    464:475:public void setSecurity(int)
+    486:486:public int getSecurity()
+    513:516:public void setPassive(boolean)
+    563:565:public int getType()
+    596:602:public void setMLSDPolicy(int)
+    615:617:public int getMLSDPolicy()
+    630:632:public java.lang.String getCharset()
+    647:657:public void setCharset(java.lang.String)
+    667:669:public boolean isResumeSupported()
+    688:688:public boolean isCompressionSupported()
+    707:708:public void setCompressionEnabled(boolean)
+    723:723:public boolean isCompressionEnabled()
+    735:737:public it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer getTextualExtensionRecognizer()
+    756:759:public void setTextualExtensionRecognizer(it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer)
+    767:769:public boolean isAuthenticated()
+    779:781:public boolean isConnected()
+    790:792:public boolean isPassive()
+    801:803:public java.lang.String getHost()
+    812:814:public int getPort()
+    823:825:public java.lang.String getPassword()
+    834:836:public java.lang.String getUsername()
+    857:871:public void setAutoNoopTimeout(long)
+    883:885:public long getAutoNoopTimeout()
+    895:901:public void addCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener)
+    911:917:public void removeCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener)
+    956:959:public void removeListParser(it.sauronsoftware.ftp4j.FTPListParser)
+    998:1003:public java.lang.String[] connect(java.lang.String)
+    1094:1095:public void abortCurrentConnectionAttempt()
+    1156:1164:public void abruptlyCloseCommunication()
+    1399:1422:public void logout()
+    1480:1491:public it.sauronsoftware.ftp4j.FTPReply sendCustomCommand(java.lang.String)
+    1510:1521:public it.sauronsoftware.ftp4j.FTPReply sendSiteCommand(java.lang.String)
+    1542:1562:public void changeAccount(java.lang.String)
+    1579:1606:public java.lang.String currentDirectory()
+    1625:1642:public void changeDirectory(java.lang.String)
+    1658:1675:public void changeDirectoryUp()
+    1695:1721:public java.util.Date modifiedDate(java.lang.String)
+    1741:1774:public long fileSize(java.lang.String)
+    1807:1831:public void rename(java.lang.String,java.lang.String)
+    1849:1866:public void deleteFile(java.lang.String)
+    1884:1901:public void deleteDirectory(java.lang.String)
+    1920:1937:public void createDirectory(java.lang.String)
+    1955:1972:public java.lang.String[] help()
+    1991:2008:public java.lang.String[] serverStatus()
+    2061:2226:public it.sauronsoftware.ftp4j.FTPFile[] list(java.lang.String)
+    2273:2273:public it.sauronsoftware.ftp4j.FTPFile[] list()
+    2314:2422:public java.lang.String[] listNames()
+    2495:2496:public void upload(java.io.File,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    2534:2535:public void upload(java.io.File,long)
+    2849:2850:public void append(java.io.File)
+    2889:2921:public void append(java.io.File,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    2962:3104:public void append(java.lang.String,java.io.InputStream,long,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    3181:3182:public void download(java.lang.String,java.io.File,it.sauronsoftware.ftp4j.FTPDataTransferListener)
+    3224:3225:public void download(java.lang.String,java.io.File,long)
+    3688:3712:public void abortCurrentDataTransfer(boolean)
+it.sauronsoftware.ftp4j.FTPCodes
+it.sauronsoftware.ftp4j.FTPCommunicationChannel:
+    104:105:public void removeCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener)
+    125:130:public it.sauronsoftware.ftp4j.FTPCommunicationListener[] getCommunicationListeners()
+it.sauronsoftware.ftp4j.FTPConnector:
+    108:109:public void setConnectionTimeout(int)
+    119:120:public void setReadTimeout(int)
+    130:131:public void setCloseTimeout(int)
+    167:168:public void setUseSuggestedAddressForDataConnections(boolean)
+    251:257:public void abortConnectForCommunicationChannel()
+it.sauronsoftware.ftp4j.FTPDataTransferException:
+    private static final long serialVersionUID
+it.sauronsoftware.ftp4j.FTPException:
+    private static final long serialVersionUID
+    63:63:public int getCode()
+it.sauronsoftware.ftp4j.FTPFile
+it.sauronsoftware.ftp4j.FTPIllegalReplyException:
+    private static final long serialVersionUID
+it.sauronsoftware.ftp4j.FTPKeys
+it.sauronsoftware.ftp4j.FTPListParseException
+it.sauronsoftware.ftp4j.FTPListParser:
+    public abstract it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+it.sauronsoftware.ftp4j.NVTASCIIWriter:
+    private static final java.lang.String LINE_SEPARATOR
+it.sauronsoftware.ftp4j.connectors.Base64
+it.sauronsoftware.ftp4j.connectors.Base64InputStream
+it.sauronsoftware.ftp4j.connectors.Base64OutputStream
+it.sauronsoftware.ftp4j.connectors.FTPProxyConnector
+it.sauronsoftware.ftp4j.connectors.HTTPTunnelConnector
+it.sauronsoftware.ftp4j.connectors.SOCKS4Connector
+it.sauronsoftware.ftp4j.connectors.SOCKS5Connector
+it.sauronsoftware.ftp4j.extrecognizers.ParametricTextualExtensionRecognizer:
+    39:58:public ParametricTextualExtensionRecognizer(java.lang.String[])
+    39:75:public ParametricTextualExtensionRecognizer(java.util.ArrayList)
+    97:101:public void removeExtension(java.lang.String)
+    110:117:public java.lang.String[] getExtensions()
+it.sauronsoftware.ftp4j.listparsers.DOSListParser:
+    47:90:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+it.sauronsoftware.ftp4j.listparsers.EPLFListParser:
+    36:97:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+    101:108:public static void main(java.lang.String[])
+it.sauronsoftware.ftp4j.listparsers.MLSDListParser:
+    53:65:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+    79:164:private it.sauronsoftware.ftp4j.FTPFile parseLine(java.lang.String)
+it.sauronsoftware.ftp4j.listparsers.NetWareListParser:
+    50:135:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+it.sauronsoftware.ftp4j.listparsers.UnixListParser:
+    52:154:public it.sauronsoftware.ftp4j.FTPFile[] parse(java.lang.String[])
+util.AppUtils:
+    23:23:public AppUtils()
+    32:43:public static boolean isAppRunning(android.content.Context,java.lang.String)
+    52:60:public static boolean isServiceRunning(android.content.Context,java.lang.String,java.lang.String)
+    64:68:public static void uninstallApk(android.content.Context,java.lang.String)
+    97:134:public static void RunApp(android.content.Context,java.lang.String)
+    180:189:public static boolean getAppInfoFromApkFile(android.content.Context,java.lang.String,download.install.AppInfo)
+    230:240:public static int getVersionCode(android.content.Context,java.lang.String)
+util.BackgroundMusic:
+    112:117:public void pauseBackgroundMusic()
+    123:127:public void resumeBackgroundMusic()
+    133:144:public void rewindBackgroundMusic()
+    152:158:public boolean isBackgroundMusicPlaying()
+    165:170:public void end()
+    178:181:public float getBackgroundVolume()
+    192:197:public void setBackgroundVolume(float)
+util.ConstUtils
+util.Crash1Application:
+    private static final java.lang.String TAG
+    277:277:public java.lang.String getPluginPackageName()
+util.Funcs:
+    public static final java.lang.String ACTION_REBOOT
+    public static final java.lang.String ACTION_REQUEST_SHUTDOWN
+    48:48:public Funcs()
+    54:57:public static boolean isMoney(java.lang.String)
+    65:69:public static byte[] StrToBytes(java.lang.String)
+    93:100:public static int getDateInterval(java.lang.String,java.lang.String)
+    104:107:public static void restartApp(android.content.Context)
+    112:115:public static void Sleep(int)
+    123:134:public static boolean saveInfo2File(java.lang.String,java.lang.String,boolean)
+    143:149:public static void closeIO(java.io.Closeable)
+    156:166:public static boolean haveFloatWindowPermission(android.content.Context)
+    174:187:public static void openFloatWindowPermissionSetting(android.content.Context)
+    192:221:public static int copy(java.lang.String,java.lang.String)
+    256:266:public static java.lang.String getFilename(java.lang.String,java.lang.String)
+    278:288:public static java.lang.String saveInfo2File(java.lang.String,java.lang.String)
+    306:314:public static boolean isForeground(android.content.Context)
+    321:325:public static int str2int(java.lang.String)
+    337:339:public static final boolean isScreenOn(android.content.Context)
+    348:349:public static final boolean isScreenLocked(android.content.Context)
+    356:365:public static void acquireWakeLock(android.content.Context,android.os.PowerManager$WakeLock,java.lang.String)
+    369:374:public static void releaseWakeLock(android.os.PowerManager$WakeLock)
+    377:382:public static void disableKeyguard(android.content.Context,java.lang.String)
+    385:401:public static java.lang.String readStreamToString(java.io.InputStream)
+    411:411:public static java.lang.String milliseconds2String(long)
+    423:423:public static java.lang.String milliseconds2String(long,java.text.SimpleDateFormat)
+    430:434:public static java.lang.String trimR(java.lang.String)
+    446:451:public static boolean killProcess(android.content.Context,java.lang.String)
+    467:475:public static boolean isApplicationBroughtToBackground(android.content.Context)
+    482:498:public static void wakeUpAndUnlock(android.content.Context)
+    504:512:public static void closeSettings(android.content.Context)
+    525:543:public static void reboot(android.content.Context)
+    548:554:public static void reboot2(android.content.Context)
+    557:563:public static void reboot3(android.content.Context)
+    569:583:public static void reboot4(android.content.Context)
+util.Funcs$1
+util.RegularUtils
+util.ResourceUtil:
+    15:15:public ResourceUtil()
+    18:18:public static int getId(android.content.Context,java.lang.String)
+    34:34:public static int getMipmapId(android.content.Context,java.lang.String)
+    38:38:public static int getColorId(android.content.Context,java.lang.String)
+    46:46:public static int getAttrId(android.content.Context,java.lang.String)
+    54:54:public static int getAnimId(android.content.Context,java.lang.String)
+    58:58:public static int getArrayId(android.content.Context,java.lang.String)
+    62:62:public static int getIntegerId(android.content.Context,java.lang.String)
+    66:66:public static int getBoolId(android.content.Context,java.lang.String)
+util.RootShellCmd:
+    private static util.RootShellCmd current
+    private android.content.Context context
+    private static final int CMD_MSG_BASE
+    public static final int CMD_FAIL
+    public static final int CMD_SUC
+    49:61:public RootShellCmd(android.content.Context)
+    55:58:public static synchronized util.RootShellCmd getRootShellCmd(android.content.Context)
+    83:89:public static boolean OpenAccessibility(android.content.Context)
+    100:107:public static boolean exec(java.lang.String)
+    118:119:public static void simulateKey(int)
+    127:130:public static void processClick(android.graphics.Point)
+    138:141:public static void processLongClick(android.graphics.Point)
+    150:152:public static void processSwipe(android.graphics.Point,android.graphics.Point)
+    163:175:public boolean execShellCmd(java.lang.String)
+    187:198:public boolean initShellCmd()
+    209:223:public static boolean execCmds(java.util.List)
+    235:262:public boolean execShellCmds(java.util.List)
+    272:272:public boolean hasRootPermission()
+    287:388:public static void RootCommand(java.lang.String)
+    395:408:public static boolean isRoot2()
+    412:418:public static boolean isRoot()
+    581:592:public static boolean haveRoot()
+    596:634:public static java.lang.String execRootCmd(java.lang.String)
+    638:663:public static int execRootCmdSilent(java.lang.String)
+    35:35:static synthetic android.content.Context access$0(util.RootShellCmd)
+util.RootShellCmd$1
+util.RootShellCmd$2
+util.RootShellCmd$2$1
+util.RootShellCmd$2$2
+util.SpeechUtil:
+    private static final java.lang.String MY_APP_ID
+    private static final java.lang.String MY_API_KEY
+    private static final java.lang.String MY_SECRET_KEY
+    77:79:public void stopSpeaking()
+    100:102:private void onDestroy()
+util.StringUtils

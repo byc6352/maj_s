@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">麻将透视</string>
+    <string name="Title">麻将透视</string>
+    <string name="action_settings">官网</string>
+    <string name="action_floatwindow">打开悬浮窗口</string>
+    <string name="service_name">麻将透视服务</string>
+    <string name="accessibility_description">请启动麻将透视服务！</string>
+ 
+</resources>

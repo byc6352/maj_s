@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:29
+-keep class accessibility.AccService { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class activity.Splash1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class download.Download1Service { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:240
+# view res/layout/activity_main.xml #generated:304
+# view res/layout/activity_main.xml #generated:373
+# view res/layout/activity_main.xml #generated:90
+-keep class foreground.FlowRadioGroup { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class foreground.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class util.Crash1Application { <init>(...); }
+
